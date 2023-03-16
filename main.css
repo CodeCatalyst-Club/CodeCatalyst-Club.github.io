@@ -26,9 +26,8 @@
   background-image: url("Summer Code Challenge.svg");
   background-size: cover;
   font-family: "poppins";
-  
-   user-select: none;
-  
+  user-select: none;
+  background-color: black;
 }
 .wrapper {
   min-height: 100vh;
@@ -200,6 +199,7 @@ p {
 }
 .container .wrapper_5 .adress_section {
   color: #fff;
+  width: 50%;
   display: flex;
   justify-content: center;
   margin-right: 3rem;
@@ -281,7 +281,7 @@ p {
   }
   .container .wrapper_6 {
     margin-top: 16rem;
+  }.main_title{
+    font-size: 3rem;
   }
-  .main_title{
-    font-size:3rem;}
 }
