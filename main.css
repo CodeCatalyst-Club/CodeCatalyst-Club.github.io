@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  background-image: url("Summer Code Challenge.svg");
+  background-size: cover;
+  font-family: "poppins";
+}
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+}
+.container .logo_section {
+  display: flex;
+  height: 15rem;
+  justify-content: center;
+  align-items: center;
+}
+.container .logo_section .main_logo {
+  width: 300px;
+}
+.container .wrapper .heading_section {
+min-height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  gap: 2rem;
+}
+.container .wrapper .heading_section .title {
+  color: white;
+  font-size: 6rem;
+  text-align: center;
+}
+.container .wrapper .heading_section .subtitle {
+  color: white;
+  text-align: center;
+}
+
+/*wrapper_2 edit*/
+
+.container .wrapper_2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.container .wrapper_2 .lap {
+  width: 80%;
+}
+.container .wrapper_2 .r_button {
+  background-color: #888888;
+  padding: 1rem 4rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.container .wrapper_2 .r_button:hover {
+  color: #fff;
+  background-color: black;
+  text-shadow: 0 0 3px #ff0000 ,0 0 5px #0000ff;
+  filter: drop-shadow(0 0 3px #f4f1f1 ,0 0 5px #f7f7f7);
+}
+/*event schedule section*/
+
+.container .wrapper_3 {
+  color: white;
+  max-width: 70rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+  font-size: large;
+}
+.container .wrapper_3 .info_title {
+  margin: 1rem;
+}
+.container .wrapper_3 .info_1,
+.info_2,
+.info_3,
+.info_4 {
+  text-align: center;
+  padding: 3rem;
+  border: #888888 2px solid;
+}
+/*event price section*/
+
+.container .wrapper_4 {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  flex-flow: column;
+  margin-top: 4rem;
+}
+.container .wrapper_4 .price_list_section {
+  margin-top: 2rem;
+}
+.container .wrapper_4 .price_list_section li {
+  margin: 1rem;
+  border: #2f0a3d 1px solid;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+}
+/*adress section*/
+
+.container .wrapper_5 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content:space-between;
+  margin-top: 5rem;
+  height: 25rem;
+}
+.container .wrapper_5 .quote_section {
+  color: white;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  gap: 2rem;
+  margin-left: 4rem;
+  
+}
+.container .wrapper_5 .quote_section a{
+    text-decoration:none;
+    color: #fff;
+    padding: 0.4rem 2rem;
+    border: #f4f1f1 2px solid;
+    border-radius: 10px;
+}
+.container .wrapper_5 .adress_section {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-right: 3rem;
+  flex-flow: column;
+  gap: 3rem;
+  text-align: left;
+}
+
+/*footer section*/
+
+.container .wrapper_6 {
+  min-height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  gap: 2rem;
+}
+.container .wrapper_6 .footer_section {
+  color: #fff;
+}
+.container .wrapper_6 .social_section {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  
+} 
+.container .wrapper_6 .social_section i{
+    font-size: 1.3rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #f8f8f8 2px solid ;
+    border-radius: 50%;
+}
+.container .wrapper_6 .social_section i:hover{
+    background-color: #888888;
+    color: black;
+}
+/*copyright section*/
+
+.container .copyright_section {
+  color: #fff;
+  background-color: #2f0a3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+/*==========media query===========8*/
+
+@media screen and (max-width: 768px) {
+  .container .wrapper .heading_section .title {
+    font-size: 3rem;
+  }
+  .container .wrapper_5 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(1fr);
+    font-size: small;
+  }
+  .container .wrapper_5 .quote_section{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+
+  }
+  .container .wrapper_5 .adress_section{
+    margin: 3rem;
+  }
+  .container .wrapper_6{
+    margin-top: 8rem;
+  }
+  
+}
