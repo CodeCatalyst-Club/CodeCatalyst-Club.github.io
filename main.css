@@ -26,6 +26,9 @@
   background-image: url("Summer Code Challenge.svg");
   background-size: cover;
   font-family: "poppins";
+   background-color: black;
+   user-select: none;
+  
 }
 .wrapper {
   min-height: 100vh;
