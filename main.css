@@ -6,6 +6,17 @@
   margin: 0;
   box-sizing: border-box;
 }
+.spon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  flex-flow: column;
+}
+img{
+width: 10rem;
+filter:invert(100%)
+}
 .rambo{
   font-size: 50px;
   text-transform: uppercase;
@@ -48,7 +59,7 @@
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  gap: 2rem;
+  gap: 3rem;
 }
 .container2 {
   width: 100%;
@@ -85,7 +96,15 @@ p {
   letter-spacing: .5px;
 }
 
+video{
+  width: 30rem;;
+  margin-top: 3rem;
+  border: 3px solid white;
+  filter: drop-shadow(2px 5px 5px gray);
+  border-radius: 1rem;
 
+
+}
 /*wrapper_2 edit*/
 
 .container .wrapper_2 {
@@ -280,8 +299,11 @@ p {
     margin: 5rem auto;
   }
   .container .wrapper_6 {
-    margin-top: 19rem;
+    margin-top: 20rem;
   }.main_title{
     font-size: 3rem;
+  }
+  video{
+    width: 20rem;
   }
 }
