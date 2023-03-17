@@ -395,6 +395,9 @@
   .container .wrapper .heading_section .main_head video  {
     width: 20rem;
   }
+  .container .wrapper_2 .lap {
+    width: 100%;
+  }
   .container .wrapper .heading_section .main_head  p {
     font-size: 0.8rem;
     margin: 0rem 2rem;
