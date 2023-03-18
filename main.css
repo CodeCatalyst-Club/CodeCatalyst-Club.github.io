@@ -14,7 +14,8 @@
     rgb(94, 147, 173) 35%,
     rgba(255, 255, 255, 1) 100%
   );
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   user-select: none;
 }
 
@@ -29,7 +30,6 @@
   flex-flow: column;
   gap: 3rem;
 }
-
 
 .container .wrapper .logo_section .main_logo {
   width: 300px;
@@ -79,7 +79,7 @@
     background-position: 200% center;
   }
 }
- .container .wrapper .heading_section .main_head   p {
+.container .wrapper .heading_section .main_head p {
   font-size: 1.2em;
   line-height: 150%;
   text-align: center;
@@ -185,11 +185,9 @@
   margin: 0 auto;
   margin-top: 4rem;
   font-size: large;
-  background-color: rgba(255, 255,255, 0.3);
-  border: #000 solid 1px;
- 
+  
 }
-.wrapper_3 .info_1 .rambo{
+.wrapper_3 .info_1 .rambo {
   color: #000;
   text-transform: uppercase;
   text-align: center;
@@ -209,20 +207,22 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
-margin-bottom: 3rem;
+  margin-bottom: 3rem;
   font-size: 2rem;
 }
 .container .wrapper_3 .info_1,
 .info_2,
 .info_3,
 .info_4 {
+  border-radius: 1rem;
   text-align: center;
   padding: 3rem;
-  border: #000000 2px solid;
-
+  border: #000000 1px solid;
+  margin-top: 2rem;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 .container .wrapper_3 .info_title {
-  margin-bottom:2rem;
+  margin-bottom: 2rem;
   color: #000000;
   border-radius: 1rem;
   border: 2px solid #020202;
@@ -247,6 +247,7 @@ margin-bottom: 3rem;
   animation: textclip 2s linear infinite;
   display: inline-block;
   font-size: 2rem;
+ 
 }
 
 .container .wrapper_3 .para {
@@ -266,7 +267,7 @@ margin-bottom: 3rem;
   font-weight: 500;
   
 }
-.container .wrapper_4 .price_title  {
+.container .wrapper_4 .price_title {
   font-size: 2rem;
   font-variation-settings: "wght" 311;
   margin-bottom: 0.8rem;
@@ -302,10 +303,11 @@ margin-bottom: 3rem;
   margin-top: 2rem;
   color: #000000;
   padding: 2rem;
-  background-color: rgba(255, 255,255, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   border: #000 solid 1px;
+  border-radius: 1rem;
 }
-.container .wrapper_4 .price_list_section li{
+.container .wrapper_4 .price_list_section li {
   margin: 1rem;
   border: #000000 1px solid;
   padding: 0.5rem 2rem;
@@ -333,10 +335,11 @@ margin-bottom: 3rem;
   flex-flow: column;
   gap: 2rem;
   margin-left: 4rem;
-  background-color: rgba(255, 255,255, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   border: #000 solid 1px;
   text-align: center;
   padding: 1rem;
+  border-radius: 1rem;
 }
 .container .wrapper_5 .quote_section a {
   text-decoration: none;
@@ -353,9 +356,9 @@ margin-bottom: 3rem;
   gap: 3rem;
   text-align: left;
   padding: 2rem;
-  background-color: rgba(255, 255,255, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   border: #000 solid 1px;
-  
+  border-radius: 1rem;
 }
 
 /*========== footer section ==============*/
@@ -378,7 +381,6 @@ margin-bottom: 3rem;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  
 }
 .container .wrapper_6 .social_section i {
   font-size: 1.3rem;
@@ -395,7 +397,6 @@ margin-bottom: 3rem;
   color: black;
 }
 
-
 /*========= sponser section ==============*/
 
 .container .spon {
@@ -409,7 +410,6 @@ margin-bottom: 3rem;
 .container .spon .sponser {
   width: 10rem;
 }
-
 
 /*===========copyright section==========*/
 
@@ -449,8 +449,6 @@ margin-bottom: 3rem;
     width: 80%;
     margin: 1rem auto;
   }
-  
-  
 }
 
 /*========== small device ============*/
@@ -459,23 +457,26 @@ margin-bottom: 3rem;
   .container .wrapper .heading_section .main_head .main_title {
     font-size: 2.5rem;
   }
-  .container .wrapper .heading_section .main_head video  {
+  .container .wrapper .heading_section .main_head video {
     width: 20rem;
   }
   .container .wrapper_2 .lap {
     width: 100%;
   }
-  .container .wrapper .heading_section .main_head  p {
+  .container .wrapper .heading_section .main_head p {
     font-size: 0.8rem;
     margin: 0rem 2rem;
   }
   .wrapper_6 {
     margin-top: 0rem;
   }
-  .container .wrapper_3 .info_title{
-  font-size: 1rem;
-}
-.container .wrapper_4 .price_title{
-  font-size: 1.3rem;
-}
+  .container .wrapper_3 .info_title {
+    font-size: 1rem;
+  }
+  .container .wrapper_4 .price_title {
+    font-size: 1.3rem;
+  }
+  .container .wrapper_3 {
+    width: 80%;
+  }
 }
