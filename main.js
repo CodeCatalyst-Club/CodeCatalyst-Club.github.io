@@ -14,5 +14,5 @@ function tick_3(){
     window.open("https://chat.whatsapp.com/CNCVHECYZsGGbPycaLVNd9");
 }
 function tick_4(){
-    window.open("https://www.escardio.org/The-ESC/Press-Office/Press-releases/Artificial-intelligence-assessment-of-heart-function-is-superior-to-sonographer-assessment");
+    window.open("https://escai.rf.gd/");
 }
