@@ -92,7 +92,7 @@
   width: 30rem;
   margin-top: 5rem;
   border: 3px solid white;
-  filter: drop-shadow(22px 22px 33px black);
+  filter: drop-shadow(2px 40px 33px black);
 }
 
 /*===========laptop section ========*/
@@ -185,10 +185,32 @@
   margin: 0 auto;
   margin-top: 4rem;
   font-size: large;
+  background-color: rgba(255, 255,255, 0.3);
+  border: #000 solid 1px;
+ 
 }
 .wrapper_3 .info_1 .rambo{
   color: #000;
-
+  text-transform: uppercase;
+  text-align: center;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+margin-bottom: 3rem;
+  font-size: 2rem;
 }
 .container .wrapper_3 .info_1,
 .info_2,
@@ -197,14 +219,34 @@
   text-align: center;
   padding: 3rem;
   border: #000000 2px solid;
+
 }
 .container .wrapper_3 .info_title {
-  margin: 1rem;
+  margin-bottom:2rem;
   color: #000000;
   border-radius: 1rem;
   border: 2px solid #020202;
-  padding: 2rem;
-  background: transparent;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 2rem;
 }
 
 .container .wrapper_3 .para {
@@ -222,18 +264,35 @@
   flex-flow: column;
   margin-top: 4rem;
   font-weight: 500;
+  
 }
 .container .wrapper_4 .price_title  {
   font-size: 2rem;
-  text-transform: uppercase;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  transition: 700ms ease;
   font-variation-settings: "wght" 311;
   margin-bottom: 0.8rem;
   color: rgb(0, 0, 0);
   outline: none;
   text-align: center;
+  text-transform: uppercase;
+  text-align: center;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  
 }
 .container .wrapper_4 .price_title :hover {
   font-variation-settings: "wght" 400;
@@ -242,10 +301,11 @@
 .container .wrapper_4 .price_list_section {
   margin-top: 2rem;
   color: #000000;
-  border: 2px solid rgb(2, 2, 2);
   padding: 2rem;
+  background-color: rgba(255, 255,255, 0.3);
+  border: #000 solid 1px;
 }
-.container .wrapper_4 .price_list_section li {
+.container .wrapper_4 .price_list_section li{
   margin: 1rem;
   border: #000000 1px solid;
   padding: 0.5rem 2rem;
@@ -266,16 +326,17 @@
 .container .wrapper_5 .quote_section {
   color: rgb(0, 0, 0);
   width: 50%;
-  min-height: 20rem;
+  min-height: 20.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
   gap: 2rem;
   margin-left: 4rem;
-  border: 2px solid #000000;
-  padding: 2rem;
-  border-radius: 2rem;
+  background-color: rgba(255, 255,255, 0.3);
+  border: #000 solid 1px;
+  text-align: center;
+  padding: 1rem;
 }
 .container .wrapper_5 .quote_section a {
   text-decoration: none;
@@ -291,9 +352,10 @@
   flex-flow: column;
   gap: 3rem;
   text-align: left;
-  border: #000000 2px solid;
-  border-radius: 2rem;
   padding: 2rem;
+  background-color: rgba(255, 255,255, 0.3);
+  border: #000 solid 1px;
+  
 }
 
 /*========== footer section ==============*/
@@ -308,6 +370,7 @@
 }
 .container .wrapper_6 .footer_section {
   color: #000000;
+  text-transform: uppercase;
 }
 .container .wrapper_6 .social_section {
   color: #000000;
@@ -315,6 +378,7 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  
 }
 .container .wrapper_6 .social_section i {
   font-size: 1.3rem;
@@ -340,6 +404,7 @@
   align-items: center;
   color: rgb(0, 0, 0);
   flex-flow: column;
+  text-transform: uppercase;
 }
 .container .spon .sponser {
   width: 10rem;
@@ -355,6 +420,7 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  text-transform: uppercase;
 }
 
 /*==========media query===========8*/
@@ -371,16 +437,17 @@
     font-size: small;
   }
   .container .wrapper_5 .quote_section {
-    width: 70%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    margin: 1rem auto;
   }
   .container .wrapper_5 .adress_section {
     margin-top: 3rem;
     width: 80%;
-    margin: 5rem auto;
+    margin: 1rem auto;
   }
   
   
@@ -403,6 +470,12 @@
     margin: 0rem 2rem;
   }
   .wrapper_6 {
-    margin-top: 2rem;
+    margin-top: 0rem;
   }
+  .container .wrapper_3 .info_title{
+  font-size: 1rem;
+}
+.container .wrapper_4 .price_title{
+  font-size: 1.3rem;
+}
 }
