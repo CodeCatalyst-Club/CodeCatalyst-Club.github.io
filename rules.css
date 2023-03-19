@@ -133,3 +133,6 @@ li {
   transition: 0s;
   transform: translate(0, 5%);
 }
+#timer{
+  margin-bottom: 2rem;
+}
