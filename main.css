@@ -5,9 +5,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-body {
-  height: 5000px;
-}
+
 .container {
   background-color: #e6e6e6;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -15,7 +13,9 @@ body {
   user-select: none;
 }
 
-.navbar_section {
+/*============== navbar section ============*/
+
+.container .navbar_section {
   min-height: 5rem;
   width: 100%;
   background-color: #4b4b4b;
@@ -24,25 +24,21 @@ body {
   align-items: center;
   position: relative;
 }
-.navbar_section h2 {
+.container .navbar_section img {
   padding: 1rem;
-  color: white;
-}
-.navbar_section .sitelogo {
-  width: 100px;
-  margin-left: 2rem;
+  width: 200px;
 }
 
-.navbar_section #display_section {
+.container .navbar_section .hold #display_section {
   display: flex;
 }
-.navbar_section li {
+.container .navbar_section .hold #display_section li {
   color: #ffffff;
   list-style: none;
   margin: 1rem;
 }
 
-.navbar_section #display_section button {
+.container .navbar_section .hold #display_section button {
   padding: 1rem 2rem;
   color: #ffffff;
   background: none;
@@ -50,20 +46,15 @@ body {
   font-weight: bold;
 }
 
-.navbar_section #display_section button:hover {
-  border: 1px solid white;
-}
-/*navbar dark mode end*/
+/*=============hamburger section start===============*/
 
-/*hamburger section start*/
-
-.hamburger_section {
+.container .navbar_section .hamburger_section {
   display: none;
   cursor: pointer;
   margin-right: 2rem;
   z-index: 9999;
 }
-.bar1,
+.container .navbar_section .hamburger_section .bar1,
 .bar2,
 .bar3 {
   width: 30px;
@@ -73,7 +64,9 @@ body {
   transition: 0.5s;
   border-radius: 3px;
 }
-/*classlist class*/
+
+/*============== classlist class ===========*/
+
 .change .bar1 {
   transform: translate(0, 11px) rotate(-45deg);
 }
@@ -83,9 +76,11 @@ body {
 .change .bar3 {
   transform: translate(0, -11px) rotate(45deg);
 }
+
 #hidden_section {
   display: flex;
   flex-flow: column;
+  gap: 8rem;
   background: linear-gradient(90deg, #6eb9e2 0%, #e984e5 35%, #e0c98a 100%);
   position: absolute;
   top: 0%;
@@ -99,19 +94,25 @@ body {
   overflow: auto;
   z-index: 999;
 }
+
 #hidden_section li {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  padding: 1.4rem;
 }
+
 #hidden_section button {
   padding: 1rem 2rem;
   margin-top: 3rem;
   background: none;
   border: none;
-   font-weight: bolder;
+  font-weight: bolder;
   color: #ffffff;
+  cursor: pointer;
 }
+
 /*===============home page===============*/
 
 .container .wrapper {
@@ -168,6 +169,7 @@ body {
     background-position: 100% center;
   }
 }
+
 .container .wrapper .heading_section .main_head p {
   font-size: 1.2em;
   line-height: 150%;
@@ -200,79 +202,9 @@ i {
 .container .wrapper_2 .lap {
   width: 80%;
 }
-.button-86 {
-  all: unset;
-  width: 100px;
-  height: 30px;
-  font-size: 16px;
-  background: transparent;
-  border: none;
-  position: relative;
-  color: #f0f0f0;
-  cursor: pointer;
-  z-index: 1;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  padding: 1rem 2rem;
-}
-
-.button-86::after,
-.button-86::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: -99999;
-  transition: all 0.4s;
-}
-
-.button-86::before {
-  transform: translate(0%, 0%);
-  width: 100%;
-  height: 100%;
-  background: #28282d;
-  border-radius: 10px;
-}
-
-.button-86::after {
-  transform: translate(10px, 10px);
-  width: 35px;
-  height: 35px;
-  background: #ffffff15;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border-radius: 50px;
-}
-
-.button-86:hover::before {
-  transform: translate(5%, 20%);
-  width: 110%;
-  height: 110%;
-}
-
-.button-86:hover::after {
-  border-radius: 10px;
-  transform: translate(0, 0);
-  width: 100%;
-  height: 100%;
-}
-
-.button-86:active::after {
-  transition: 0s;
-  transform: translate(0, 5%);
-}
 
 /*====== event schedule section====*/
-span {
-  text-transform: uppercase;
-  font-weight: bold;
-}
+
 .container .wrapper_3 {
   color: white;
   max-width: 70rem;
@@ -345,7 +277,10 @@ span {
 .container .wrapper_3 .para {
   color: #030303;
 }
-
+.container .wrapper_3 .para span {
+  text-transform: uppercase;
+  font-weight: bold;
+}
 /*=========== price section ===================*/
 
 .container .wrapper_4 {
@@ -386,10 +321,7 @@ span {
   animation: textclip 2s linear infinite;
   display: inline-block;
 }
-.container .wrapper_4 .price_title :hover {
-  font-variation-settings: "wght" 400;
-  letter-spacing: 2px;
-}
+
 .container .wrapper_4 .price_list_section {
   margin-top: 2rem;
   color: #000000;
@@ -405,9 +337,9 @@ span {
   border-radius: 1rem;
 }
 
-/*======= certificate sectio ========*/
+/*======= certificate section ========*/
 
-.certificate_sec {
+.container .certificate_sec {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -415,6 +347,7 @@ span {
   max-width: 70rem;
   margin: 0 auto;
 }
+
 /*========== adress section=============*/
 
 .container .wrapper_5 {
@@ -429,7 +362,7 @@ span {
 .container .wrapper_5 .quote_section {
   color: rgb(0, 0, 0);
   width: 50%;
-  min-height: 22.5rem;
+  min-height: 26.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -442,10 +375,7 @@ span {
   padding: 1rem;
   border-radius: 1rem;
 }
-.container .wrapper_5 .quote_section a {
-  text-decoration: none;
-  padding: 0.4rem 3rem;
-}
+
 .container .wrapper_5 .adress_section {
   color: #000000;
   min-height: 20rem;
@@ -461,17 +391,18 @@ span {
   border: #000 solid 1px;
   border-radius: 1rem;
 }
-.container .wrapper_5 .adress_section .box {
+
+.container .wrapper_5 .adress_section a {
+  padding: 0.8rem 2rem;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #4b4b4b;
+  border-radius: 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
-.container .wrapper_5 .adress_section .box a {
-  padding: 0.5rem 3rem;
-}
-.container .wrapper_5 .adress_section .box p {
-  margin-left: 0px;
-}
+
 /*========== footer section ==============*/
 
 .container .wrapper_6 {
@@ -502,6 +433,7 @@ span {
   align-items: center;
   border: #000000 2px solid;
   border-radius: 50%;
+  cursor: pointer;
 }
 .container .wrapper_6 .social_section i:hover {
   background-color: #888888;
@@ -519,18 +451,21 @@ span {
   text-transform: uppercase;
 }
 
-picture {
+.container .spon picture {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
   gap: 1rem;
 }
-picture img {
+.container .spon picture img {
   height: 9rem;
   width: 9rem;
+  cursor: pointer;
 }
-
+.container .spon .sponser2 {
+  filter: ;
+}
 /*===========copyright section==========*/
 
 .container .copyright_section {
@@ -544,9 +479,15 @@ picture img {
   margin-top: 3rem;
 }
 
-/*==========media query===========8*/
+/*==========media query===========*/
 
 @media screen and (max-width: 868px) {
+  .container .navbar_section .hold #display_section li {
+    display: none;
+  }
+  .container .navbar_section .hamburger_section {
+    display: block;
+  }
   .container .wrapper .heading_section .title {
     font-size: 2rem;
   }
@@ -570,36 +511,27 @@ picture img {
     width: 80%;
     margin: 1rem auto;
   }
-  #display_section li {
-    display: none;
-  }
-
-  .hamburger_section {
-    display: block;
-  }
-  .modal {
-    left: 10%;
-    top: 25%;
-    width: 80%;
-    height: 60%;
-  }
 }
 
 /*========== small device ============*/
 
 @media screen and (max-width: 500px) {
+  #hiddeen_section {
+    top: -1%;
+    right: 0;
+  }
   .container .wrapper .heading_section .main_head .main_title {
     font-size: 2.5rem;
+  }
+  .container .wrapper .heading_section .main_head p {
+    font-size: 0.8rem;
+    margin: 0rem 2rem;
   }
   .container .wrapper .heading_section .main_head video {
     width: 20rem;
   }
   .container .wrapper_2 .lap {
     width: 100%;
-  }
-  .container .wrapper .heading_section .main_head p {
-    font-size: 0.8rem;
-    margin: 0rem 2rem;
   }
   .wrapper_6 {
     margin-top: 0rem;
@@ -613,29 +545,12 @@ picture img {
   .container .wrapper_3 {
     width: 80%;
   }
-  .container .wrapper_5 .adress_section .box {
-    display: grid;
-    grid-template-columns: repeat(1fr);
-    gap: 2rem;
-    text-align: left;
-    justify-content: center;
-    width: 12rem;
-    flex-flow: row-reverse;
-    padding: 1rem 5rem;
-  }
+
   .wrapper_3 .info_1 .rambo,
   .container .wrapper_4 .price_title {
     font-size: 1rem;
   }
   .certificate_sec img {
     width: 80%;
-  }
-  #hiddeen_section {
-    top: -1%;
-    right: 0;
-  }
-
-  .dark {
-    right: 25%;
   }
 }
