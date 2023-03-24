@@ -44,11 +44,15 @@ body {
 
 .navbar_section #display_section button {
   padding: 1rem 2rem;
-  color: #000000;
-  border-radius: 1rem;
+  color: #ffffff;
+  background: none;
   border: none;
+  font-weight: bold;
 }
 
+.navbar_section #display_section button:hover {
+  border: 1px solid white;
+}
 /*navbar dark mode end*/
 
 /*hamburger section start*/
@@ -87,12 +91,13 @@ body {
   top: 0%;
   right: 0%;
   width: 100%;
-  height: 500px;
+  height: 8000px;
   justify-content: center;
   align-items: center;
   display: none;
   list-style: none;
   overflow: auto;
+  z-index: 999;
 }
 #hidden_section li {
   display: flex;
@@ -100,7 +105,7 @@ body {
   align-items: center;
 }
 #hidden_section button {
-padding: 1rem 2rem;
+  padding: 1rem 2rem;
   color: #000000;
   margin-top: 3rem;
   background: none;
@@ -423,7 +428,7 @@ span {
 .container .wrapper_5 .quote_section {
   color: rgb(0, 0, 0);
   width: 50%;
-  min-height: 21.5rem;
+  min-height: 22.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -457,9 +462,8 @@ span {
 }
 .container .wrapper_5 .adress_section .box {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
-
 }
 .container .wrapper_5 .adress_section .box a {
   padding: 0.5rem 3rem;
@@ -578,7 +582,6 @@ picture img {
     width: 80%;
     height: 60%;
   }
- 
 }
 
 /*========== small device ============*/
@@ -614,8 +617,7 @@ picture img {
     grid-template-columns: repeat(1fr);
     gap: 2rem;
     text-align: left;
-justify-content:center
-;
+    justify-content: center;
     width: 12rem;
     flex-flow: row-reverse;
     padding: 1rem 5rem;
