@@ -9,14 +9,9 @@ function tick_1(){
 function tick_2(){
     window.open("https://github.com/CodeCatalyst-Club")
 }
-
-function tick_3(){
-    window.open("https://chat.whatsapp.com/CNCVHECYZsGGbPycaLVNd9");
-}
 function tick_4(){
     window.open("https://escai.rf.gd/");
 }
 function tick_5(){
-    window.open("https://gtprojectz.blogspot.com/");
+    window.open("https://gtprojectz.blogspot.com");
 }
-
