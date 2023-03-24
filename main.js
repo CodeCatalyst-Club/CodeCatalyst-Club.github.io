@@ -16,5 +16,7 @@ function tick_3(){
 function tick_4(){
     window.open("https://escai.rf.gd/");
 }
-
+function tick_5(){
+    window.open("https://gtprojectz.blogspot.com/");
+}
 
