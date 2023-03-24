@@ -15,13 +15,62 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
+   
     <div class="container">
+
       <!--=================home page section=================-->
 
-      <div class="wrapper">
-        <div class="logo_section">
-          <img src="mainlogo.png" alt="logo" class="main_logo" />
+      <div class="navbar_section">
+        <h2>CCC</h2>
+        <div class="hold">
+          <ol id="display_section">
+            <li>
+            <button onclick="scrollWin1()">HOME</button>
+            </li>
+            <li>
+              <button onclick="scrollWin2()" >REGISTER</button>
+            </li>
+            <li>
+              <button onclick="scrollWin3()">SCHEDULE</button>
+            </li>
+            <li>
+              <button onclick="scrollWin4()">REWARD</button>
+            </li>
+            <li>
+              <button onclick="scrollWin5()">ADRESS</button>
+            </li>
+          </ol>
         </div>
+
+
+        <!--navbar end-->
+        <!--navbar hamburger section start-->
+        <div class="hamburger_section" onclick="swap()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+      <ol id="hidden_section">
+        <li>
+          <button onclick="scroll1()">HOME</button>
+        </li>
+        <li>
+          <button onclick="scroll2()" >REGISTER</button>
+        </li>
+        <li>
+          <button onclick="scroll3()">SCHEDULE</button>
+        </li>
+        <li>
+          <button onclick="scroll4()">REWARD</button>
+        </li>
+        <li>
+          <button onclick="scroll5()">ADRESS</button>
+        </li>
+      
+      </ol>
+      <div class="wrapper">
+       
         <div class="heading_section">
           <div class="main_head">
             <h1 class="main_title">Summer Code <br />Challenge</h1>
@@ -54,7 +103,8 @@
           <h1 class="rambo">EVENT SCHEDULE</h1>
           <h4 class="info_title">ROUND 1</h4>
           <p class="para">
-            <span>C language Programming Quiz </span> <br>The first round will be a
+            <span>Programming Quiz </span> <br />
+          </br>The first round will be a
             programming quiz consisting of multiple-choice and short answer
             questions. The quiz will test the participants' knowledge of
             programming languages, concepts, and theory. The participants with
@@ -64,7 +114,7 @@
         <div class="info_2">
           <h4 class="info_title">ROUND 2</h4>
           <p class="para">
-            <span>C language Coding Competition</span> <br />
+            <span>Coding Competition</span> <br />
             <br />
             The second round will be a coding competition in which participants
             will be given a question paper consisting of two coding problems.
@@ -77,7 +127,7 @@
         <div class="info_3">
           <h4 class="info_title">ROUND 3</h4>
           <p class="para">
-            <span>C language On-Spot Coding Challenge </span> <br />
+            <span>On-Spot Coding Challenge </span> <br />
             <br />
             The final round will be an on-spot coding challenge. Participants
             will be given a randomly assigned programming language and a coding
@@ -87,18 +137,7 @@
             best will be declared the winners of the Summer Code Challenge.
           </p>
         </div>
-        <div class="info_4">
-          <h4 class="info_title">ROUND 4</h4>
-          <p class="para">
-            <span>C language Team Challenge</span> <br />
-            <br />If time permits, an optional team challenge may be added to
-            the event. Participants will be placed into teams and given a more
-            complex coding problem to solve within a fixed amount of time. The
-            teams will be evaluated based on teamwork, solution accuracy,
-            efficiency, and hardcore coding. The winning team will be announced
-            at the end of the challenge.
-          </p>
-        </div>
+     
       </div>
 
       <!--============ price section ================-->
@@ -153,7 +192,7 @@
 
           <p>Event Date : 29 March 2023</p>
           <div class="box">
-            <p>Event time : 10 AM Sharp</p>
+            <p>Event time : 10:00 AM Sharp</p>
             <a href="https://goo.gl/maps/XMnnFeZjZY5m553g9" class="button-86"
               >EVENT LOCATION</a
             >
@@ -170,7 +209,7 @@
         <div class="social_section">
           <i onclick="tick_1()" class="fa-brands fa-instagram" id="insta"></i>
           <i onclick="tick_2()" class="fa-brands fa-github" id="git"></i>
-          
+         
         </div>
       </div>
 
