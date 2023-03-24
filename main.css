@@ -106,10 +106,11 @@ body {
 }
 #hidden_section button {
   padding: 1rem 2rem;
-  color: #000000;
   margin-top: 3rem;
   background: none;
   border: none;
+   font-weight: bolder;
+  color: #ffffff;
 }
 /*===============home page===============*/
 
