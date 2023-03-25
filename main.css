@@ -206,7 +206,7 @@ i {
   align-items: center;
   flex-flow: column;
   gap: 2rem;
-  margin-top: 8rem;
+  margin-top: 4rem;
 }
 .container .wrapper_2 .lap {
   width: 80%;
@@ -503,7 +503,7 @@ i {
   align-items: center;
   padding: 2rem;
   text-transform: uppercase;
-  margin-top: 3rem;
+ 
 }
 
 /*==========media query===========*/
