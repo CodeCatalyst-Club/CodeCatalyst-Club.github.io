@@ -116,7 +116,7 @@
   text-align: left;
 }
 #hidden_section button:hover {
-  filter: drop-shadow(2px 2px 2px black);
+   color: red;
 }
 #hidden_section li .fir {
   margin-top: 3rem;
