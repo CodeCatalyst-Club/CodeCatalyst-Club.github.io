@@ -29,13 +29,11 @@ function swap() {
 }
 
 function scrollWin1() {
-  window.open(
-    "https://drive.google.com/file/d/1dDCBTqqs0w024ltpRqsDB84641xxILJP/view?usp=share_link"
-  );
+  window.open( "https://drive.google.com/file/d/1dDCBTqqs0w024ltpRqsDB84641xxILJP/view?usp=share_link" );
 }
 
 function scrollWin2() {
-  alert("tomorrow 09:00 PM");
+  window.open("https://drive.google.com/file/d/1iFdKO-WUAIAKY2kIhp9dRPfklg74KuxE/view?usp=share_link");
 }
 
 function scrollWin3() {
@@ -50,6 +48,8 @@ function scrollWin5() {
   window.open("https://goo.gl/maps/XMnnFeZjZY5m553g9");
 }
 
+
+
 function scroll1() {
   window.open(
     "https://drive.google.com/file/d/1dDCBTqqs0w024ltpRqsDB84641xxILJP/view?usp=share_link"
@@ -57,7 +57,7 @@ function scroll1() {
 }
 
 function scroll2() {
-  alert("tomorrow 09:00 PM");
+  window.open("https://drive.google.com/file/d/1iFdKO-WUAIAKY2kIhp9dRPfklg74KuxE/view?usp=share_link");
 }
 
 function scroll3() {
