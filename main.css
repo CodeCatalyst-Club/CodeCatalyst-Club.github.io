@@ -33,14 +33,14 @@
   display: flex;
 }
 .container .navbar_section .hold #display_section li {
-  color: #ffffff;
+  color: #000000;
   list-style: none;
   margin: 1rem;
 }
 
 .container .navbar_section .hold #display_section button {
   padding: 1rem 2rem;
-  color: #ffffff;
+  color: #000000;
   background: none;
   border: none;
   font-weight: bold;
@@ -59,7 +59,7 @@
 .bar3 {
   width: 30px;
   height: 5px;
-  background: -webkit-linear-gradient(#ffffff, #ffffff);
+  background: -webkit-linear-gradient(#635252, #ffffff);
   margin: 6px 0px;
   transition: 0.5s;
   border-radius: 3px;
@@ -69,6 +69,7 @@
 
 .change .bar1 {
   transform: translate(0, 11px) rotate(-45deg);
+  color: #000;
 }
 .change .bar2 {
   opacity: 0;
@@ -109,7 +110,7 @@
   background: none;
   border: none;
   font-weight: bolder;
-  color: #ffffff;
+  color: #000000;
   cursor: pointer;
 }
 
@@ -176,7 +177,14 @@
   text-align: center;
   color: rgb(0, 0, 0);
   letter-spacing: 0.5px;
+  font-weight: 700;
 }
+.container .wrapper .heading_section .main_head button{
+  padding: 1rem 2rem;
+  border: none;
+  background-color: #b07fe5;
+  color: #000;
+  border-radius: 3px;}
 i {
   font-size: 2rem;
   color: #000;
@@ -361,6 +369,7 @@ i {
 }
 .container .wrapper_5 .quote_section {
   color: rgb(0, 0, 0);
+  font-weight: 700;
   width: 50%;
   min-height: 26.8rem;
   display: flex;
@@ -390,6 +399,7 @@ i {
   background-color: rgba(255, 255, 255, 0.3);
   border: #000 solid 1px;
   border-radius: 1rem;
+  font-weight: 700;
 }
 
 .container .wrapper_5 .adress_section a {
@@ -464,7 +474,7 @@ i {
   cursor: pointer;
 }
 .container .spon .sponser2 {
-  filter: ;
+  filter:grayscale() ;
 }
 /*===========copyright section==========*/
 
