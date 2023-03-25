@@ -179,14 +179,7 @@
   letter-spacing: 0.5px;
   font-weight: 700;
 }
-.container .wrapper .heading_section .main_head a{
-  padding: 1rem 2rem;
-  border: none;
-  background-color: #b07fe5;
-  color: #000;
-  border-radius: 3px;
-  text-decoration: none;
-}
+
 i {
   font-size: 2rem;
   color: #000;
@@ -211,6 +204,14 @@ i {
 }
 .container .wrapper_2 .lap {
   width: 80%;
+}
+.container .wrapper_2 a{
+  padding: 1rem 2rem;
+  border: none;
+  background-color: #4b4b4b;
+  color: #ffffff;
+  border-radius: 3px;
+  text-decoration: none;
 }
 
 /*====== event schedule section====*/
