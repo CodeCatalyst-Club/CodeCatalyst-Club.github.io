@@ -43,10 +43,11 @@ var x = setInterval(function () {
 }, 1000);
 
 
-function websiteVisits(response) {
-        document.querySelector("#visits").textContent = response.value;
-    }
 
+    function liveViews(response) {
+      document.getElementById('visits').innerText = response.value;
+  }
+  
 // Clock JS End
 
 
@@ -236,19 +237,13 @@ window.onload = function () {
   }, 1500);
 };
 
-// Read More
-function read_more() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more"; 
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less"; 
-    moreText.style.display = "inline";
-  }
+const countE1=document.getElementById("visits");
+countvisits();
+function countvisits() {
+  fetch('https://api.countapi.xyz/update/ccc/club/?amount=1')
+  .then((res)=>res.json())
+  .then((res)=> {
+    countE1.innerHTML=res.value;
+  });
 }
