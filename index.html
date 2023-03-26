@@ -1,137 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Code-Catalyst | Club-Event</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Orienta&family=Prompt&display=swap"
-      rel="stylesheet"
-    />
 
-    
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="style.css" />
-  
-  </head>
-  <body>
-    <div class="container">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orienta&family=Prompt&display=swap" rel="stylesheet">
 
-      <!--=================home page section=================-->
+  <!-- Devfolio Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-      <header>
-      <div class="navbar_section">
-        <img src="mainlogo.svg" alt="" />
-        <div class="hold">
-          <ol id="display_section">
-            <li>
-              <button class="button-71" onclick="scrollWin1()">ROUND-1</button>
-            </li>
-            <li>
-              <button class="button-71" onclick="scrollWin2()">ROUND-2</button>
-            </li>
-            <li>
-              <button class="button-71" onclick="scrollWin3()">REGISTER</button>
-            </li>
-            <li>
-              <button class="button-71" onclick="scrollWin4()">RULES</button>
-            </li>
-          </ol>
+  <link rel="shortcut icon" href="images/quasar_favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Code | Catalyst</title>
+</head>
+
+
+<body>
+
+  <div class="body" id="block1">
+    <div class="loadingWrap">
+      <svg class="loading" viewBox="0 0 84.6 84.6">
+        <defs>
+          <filter id="stickyFilter">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+              result="filter" />
+            <feComposite in="SourceGraphic" in2="filter" operator="atop" />
+          </filter>
+          <linearGradient id="gradient" class="gradient" x1="0%" y1="0%" x2="0%" y2="40%"
+            gradientTransform="rotate(45)">
+            <stop offset="0%" />
+            <stop offset="100%" />
+          </linearGradient>
+        </defs>
+        <clipPath id="clip">
+          <circle cx="42.3" cy="42.3" r="41.6" />
+        </clipPath>
+        <g clip-path="url(#clip)">
+          <path class="background" d="M0 0h84.6v84.6H0z" />
+          <g class="exhaust">
+            <path class="gradientBox" d="M2.37244 65.5981l28.84968-28.84968 16.54614 16.54614-28.84968 28.84968z" />
+            <path class="gradientBox" d="M6.35189 69.55189l28.84968-28.84968 8.34378 8.34378-28.84968 28.84968z" />
+            <g class="filteredGroup">
+              <path class="line1 line lineThick" d="M47.7 49.6L13.4 83.9" />
+              <path class="line2 line lineThick" d="M42.3 42.3L8 76.6" />
+              <path class="line3 line lineThick" d="M33.5 38.5L-.8 72.8" />
+
+              <path class="line4 line lineDots" d="M45 45.82L10.7 80.12" />
+              <path class="line5 line lineDots" d="M38.16 40.06L3.86 74.36" />
+
+              <path class="line6 line lineStatic" d="M39.46 41.15L18.91 61.7" />
+              <path class="line7 line lineStatic" d="M43.57 43.77L23.02 64.32" />
+            </g>
+          </g>
+          <g class="rotate">
+            <g class="rumble">
+              <path class="arrow"
+                d="M60.8 27.2c.6-2.1-1.3-4-3.4-3.4L19.5 35.3c-2.2.7-2.6 3.6-.8 4.9l15.8 7.6c1.1.5 2 1.4 2.5 2.6L44.4 66c1.3 1.9 4.2 1.4 4.9-.8l11.5-38z" />
+            </g>
+          </g>
+        </g>
+      </svg>
+      <div class="label">Entering into the Heaven....</div>
+    </div>
+  </div>
+
+  <div id="block2" style="display: none;">
+    <header class="main-header" id="head">
+      <nav class="nav container" id="navBar">
+        <div class="logo">
+       
+          <h1 class="logo-type gradient">CodeCatalyst</h1>
         </div>
 
-        <!--=========navbar hamburger section start==========-->
 
-        <div class="hamburger_section" onclick="swap()">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
-      </div>
-
-      <ol id="hidden_section">
-        <li>
-          <button onclick="scroll1()" class="first">ROUND-1</button>
+        <ul class="nav-links" id="navLinks">
+          <li class="nav-item"><a href="#toHome">Home</a> </li>
+          <li class="nav-item"><a href="#toAbout">About</a> </li>
+          <li class="nav-item"><a href="#toTimeline">Timeline</a> </li>
+        
+          <li class="nav-item"><a href="#toSchedule">Schedule</a> </li>
+          <li class="nav-item"><a href="#toSponsors">Sponsors</a> </li>
+          <li class="nav-item"><a href="#toContact">Contact</a> </li>
+          <!-- <li class="nav-item"><a class="nav-btn" href="#home">Register!</a> </li> -->
+        </ul>
+        <li class="hamburger"><a class="ham-icon" id="ham" href="#home"><i id="hamInner" class="fas fa-bars"></i></a>
         </li>
-
-        <li>
-          <button onclick="scroll2()">ROUND-2</button>
-        </li>
-        <li>
-          <button onclick="scroll3()">REGISTER</button>
-        </li>
-        <li>
-          <button onclick="scroll4()">RULES</button>
-        </li>
-      </ol>
-      <hr />
-      <!--===============home page===============-->
-
-      <div class="wrapper">
-        <div class="main_head">
-          <h1 class="main_title">Summer Code <br />Challenge</h1>
-          <i class="fa-solid fa-quote-left"></i>
-          <p>
-            "Join our Summer Code Challenge and showcase. your coding skills
-            while competing with like-minded individuals."
-          </p>
-          <i class="fa-sharp fa-solid fa-minus"></i>
-          <a href="https://forms.gle/j82U64bkyV9AqwXK7" class="button-72"
-            >REGISTER</a
-          >
-        </div>
-        <div class="main_head_2">
-          <img src="home.svg" alt="home" class="home_image" />
-        </div>
-      </div>
+      </nav>
     </header>
 
-      <!--============About section===========-->
+    <!-- Main Page - Anubhav -->
+    <main class="main-page pad" id="toHome">
+      <div class="container row landing-page">
+        <div class="col-lg-6 md-12 sm-12 hero-left">
+          <!-- Left Text -->
+          <img id="hero-image" src="mainlogo.svg">
+          <p class="hero-subtitle"><span class="gradient">"</span>SUMMER CODE CHALLENGE <span class="gradient">"</span></p>
 
-      <section class="about">
-        <h1 class="header gradient2">About Code Catalyst Club</h1>
+          <div class="event-reg para">
+            <!-- <a href="https://quasar.devfolio.co/" class="devfolio_button" target="_blank">
+              <button id="apply-button" class="dark-inverted" type="button">
+                <svg class="dev_logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.46 123.46" fill="#fff">
+                  <path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6
+                      12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51
+                      13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08
+                      2.18.08 3.34z"></path>
+                  <path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15
+                      104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41
+                      55.41 0 0 1 50.58 55.34z"></path>
+                </svg>
+                <span id="apply-button-title">Apply with Devfolio</span>
+              </button>
+            </a> -->
+
+            <a href="#announce"><button class="register">Shorlisting Results</button></a>
+          </div>
+        </div>
+
+        <div class="col-lg-6 md-12 sm-12 hero-right">
+          <!-- Circle Timer -->
+          <div class="mytp">
+            <div class="circle"></div>
+
+            <section id="count">
+              <div class="count-wrapper text-center">
+                <div class="time-countdown wow fadeInUp" data-wow-delay="0.2s">
+                  <div id="clock" class="time-count">
+                    <div class="count-item-main" style="margin-left: 10%">
+                      <p class="count-item gradient" id="count-days">%d</p>
+                      <p class="count-item">D</p>
+                    </div>
+                    <div class="count-item-main">
+                      <p class="count-item gradient" id="count-hours">%h</p>
+                      <p class="count-item">H</p>
+                    </div>
+                    <div class="count-item-main">
+                      <p class="count-item gradient" id="count-mins">%m</p>
+                      <p class="count-item">M</p>
+                    </div>
+                    <div class="count-item-main">
+                      <p class="count-item gradient" id="count-sec">%s</p>
+                      <p class="count-item">S</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+        </div>
+      </div>
+      <!-- end of Hero -->
+    </main>
+
+    <!-- About Page  -->
+    <section class="about" id="toAbout">
+      <div class="row container about-page">
+        <h1 class="header gradient2 ">About Code Catalyst Club</h1>
         <p class="about-text para">
-          <span class="gradient">The Summer Code Challenge </span> is not just
-          another coding event, it's an experience unlike any other. Organized
-          by a team of passionate students, the Summer Code Challenge is
-          designed to be a hybrid mode event that encourages innovation and
-          sustainability. But that's not all! The Summer Code Challenge is also
-          a platform for learning and growth. Participants will have access to a
-          series of workshops and fun activities that are designed to help them
-          develop their coding skills and network with other like-minded
-          individuals. At the end of the event, participants will not only have
-          developed innovative solutions to real-world problems, but they will
-          also have formed lasting connections with other coders and mentors.
-          Join us for the Summer Code Challenge and experience the thrill of
-          coding, the joy of innovation, and the satisfaction of making a
-          positive impact  on the world.
-        </p>
+          <span class="gradient">Summer Challange</span> is the flagship annual <span class="gradient">24-hour</span> Code Catalyst Club
+          organized by <span class="gradient">
+            KARMAVEER BHAURAO PATIL College 
+          </span> The Summer Code Challenge is not just another coding event, it's an experience unlike any other. Organized by a team of passionate students, the Summer Code Challenge is designed to be a hybrid mode event that encourages innovation and sustainability.
 
+          But that's not all! The Summer Code Challenge is also a platform for learning and growth. Participants will have access to a series of workshops and fun activities that are designed to help them develop their coding skills and network with other like-minded individuals.
+          <br>
+          At the end of the event, participants will not only have developed innovative solutions to real-world problems, but they will also have formed lasting connections with other coders and mentors.
+          
+          Join us for the Summer Code Challenge and experience the thrill of coding, the joy of innovation, and the satisfaction of making a positive impact on the world.
+        </p>
+        <!-- Event Info -->
 
         <div class="about-info">
           <div class="info-cards">
@@ -149,241 +197,396 @@
           <div class="info-cards">
             <div class="content">
               <p class="up">Team Size</p>
-              <p>1 to 8 members</p>
+              <p>1 to 10 members</p>
             </div>
           </div>
         </div>
 
-        <p class="reg-para para">Registration for Quasar is free!</p>
-
-        <br />
+        <div class="event-reg">
+<!--           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdAH5vSNWfzZ9DYtlOKH4BI8iKyCPqTECe_UFp97sfI5twuRQ/viewform"><button
+              class="register" target="_blank">Register Now</button></a> -->
+          
+         
+         
+          <p class="reg-para para">Registration for Code Catalyst is free!</p>
+        </div>
+        <br>
         <p class="text-center para my-5">
-          Registration closes on
-          <span class="gradient2"> 27th March, 2023.</span><br />
-          CodeCatalyst begins on
-          <span class="gradient2"> 29th March, 2023.</span>
-        </p>
-      </section>
+          Registration closes on <span class="gradient2"> 27th March, 2023.</span><br>
+          Catalystian begins on <span class="gradient2"> 29th March, 2023.</span></p>
 
-      <!--===============shedule section ============-->
 
-      <section class="schedule" id="toSchedule">
-        <div class="container1">
-          <div class="titlewrap">
-          <h1 class="header gradient2">Schedule</h1>
+
+
+      </div>
+    </section>
+
+    <!-- Shorlisted Winners 
+    <section class="prizes" id="announce">
+  <div class="container prizes-page">
+  <h1 class="header gradient2">Announcements</h1>
+  <div class="prizes-text">
+    <p class="about-text para ">
+      "Congratulations Quasarians who made it to the next level."
+    </p>
+  </div>
+  <div class="row prizes-images">
+    <div class="col-lg-6 col-md-6 col-xs-12">
+      <div class="event-item">
+        <img class="img-fluid" src="images/1.jpg" alt="">
+        <p class="sub">Page 1/4</p>
+      </div>
+      <br>
+      <br>
+      <br>
+    </div>
+  
+    <div class="col-lg-6 col-md-6 col-xs-12">
+      <div class="event-item">
+        <img class="img-fluid" src="images/2 (2).jpg" alt="">
+        <p class="sub">Page 2/4</p>
+      </div>
+      <br>
+      <br>
+      <br>
+  
+    </div>
+  
+    <div class="col-lg-6 col-md-6 col-xs-12">
+      <div class="event-item">
+        <img class="img-fluid" src="images/3.jpg" alt="">
+        <p class="sub">Page 3/4</p>
+      </div>
+    </div>
+  
+    <div class="col-lg-6 col-md-6 col-xs-12">
+      <div class="event-item">
+        <img class="img-fluid" src="images/4.jpg" alt="">
+        <p class="sub">Page 4/4</p>
+      </div>
+    </div>
+  
+  </div>
+  </div>
+    </section>
+-->
+    <!-- Roadmap -->
+    <section class="timeline roadmap" id="toTimeline">
+      <h1 class="header gradient2">Timeline</h1>
+      <ul>
+        <li>
+          <div>
+            <time>27th March</time>
+            <div class="discovery">
+              <h5 class="text">Registration Ends</h5>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>29th March</time>
+            <div class="discovery">
+              <h5 class="text">  Round-1</h5>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>29th March</time>
+            <div class="discovery">
+              <h5 class="text"> Round-2 </h5>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>29th March</time>
+            <div class="discovery">
+              <h5 class="text"> Round-3 </h5>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>30th March</time>
+            <div class="discovery">
+              <h5 class="text"> Prize Distribution</h5>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Sector Card 
+    <section class="sectors" id="toSectors">
+      <div class="container sector-page">
+        <h1 class="header gradient2">Sectors</h1>
+        <div class="sector-text">
           <p class="about-text para">
-            "This is where you'll find all the important details about the
-            timeline of Code Catalyst Club. Our event is designed to be a fun
-            and engaging experience, with a mix of coding, learning, and
-            competition. This schedule has been carefully crafted to provide a
-            seamless and enjoyable experience for all participants.“
+            "It is where we showcase the unique aspect of Quasar. Unlike other hackathons, we do not limit you to
+            specific
+            domains. Instead, we offer four main sectors for you to choose from, providing you the freedom to explore
+            and
+            specialize in any domain within the sector that interests you. This approach reflects the current needs and
+            advancements in technology and provides a platform for you to showcase your skills and innovate solutions to
+            real-world problems."
           </p>
         </div>
-          <div class="phase_wrapper_one">
-            <div class="col_lg_6 row" style="flex: 1">
-              <div class="phase_card card">
-                <div class="phase">
-                  <p class="phase-text gradient">&gt; ROUND 1</p>
-                  <p class="test">C Programming Quiz</p>
-                </div>
-                <p class="phase-date">29th March 2023</p>
-                <p class="phase-para" style="text-align: justify">
-                  The first round will be a programming quiz consisting of
-                  multiple-choice and short answer questions. The quiz will test
-                  the participants' knowledge of programming languages,
-                  concepts, and theory. The participants with the highest scores
-                  will advance the next round. 
-                </p>
+        <div class="card-wrapper row">
+
+          <div class="col-lg-6 sm-12 mycard">
+            <div class="card sector_cards">
+              <img class="card-img-top my-card-img" src="images/edu.jpg" alt="Card image cap">
+              <div class="card-body sector_body">
+                <h3 class="short">Smart Education</h3>
+                <p>“This sector provides an opportunity for you to explore innovative solutions for the education
+                  industry, from improving access to quality education for all, to developing cutting-edge educational
+                  technologies."</p>
               </div>
             </div>
+          </div>
+
+          <div class="col-lg-6 sm-12 mycard">
+            <div class="card sector_cards">
+              <img class="card-img-top my-card-img" src="images/agri.png" alt="Card image cap">
+              <div class="card-body sector_body">
+                <h3 class="short">Agriculture/Rural Development</h3>
+                <p>"Whether you're interested in creating tools for better crop management or finding ways to increase
+                  access to markets for small-scale farmers, this sector offers a wide range of possibilities for you to
+                  showcase your skills and make a positive impact on the world."</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="card-wrapper row">
+
+          <div class="col-lg-6 sm-12 mycard">
+            <div class="card sector_cards">
+              <img class="card-img-top my-card-img" src="images/biotech.jpg" alt="Card image cap">
+              <div class="card-body sector_body">
+                <h3 class="short">MediTech/BioTech</h3>
+                <p>“Whether you're interested in using AI for disease diagnosis or creating wearable devices for
+                  monitoring health, the possibilities for innovation in this sector are endless."</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 sm-12 mycard">
+            <div class="card sector_cards">
+              <img class="card-img-top my-card-img" src="images/smart_city.jpg" alt="Card image cap">
+              <div class="card-body sector_body">
+                <h3 class="short">Smart City</h3>
+                <p>"In this sector, we're looking for innovative ideas that can make our cities more sustainable,
+                  connected, and efficient. Whether it's developing smart traffic management systems, enhancing public
+                  transportation, or creating solutions for waste management, we're looking for solutions that can
+                  improve
+                  the quality of life for citizens."</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Sector Card end -->
+
+
+    <!-- Schedule Cards Start -->
+    <section class="schedule" id="toSchedule">
+      <div class="container">
+        <h1 class="header gradient2">Schedule</h1>
+        <p class="about-text para">"This is where you'll find all the important details about the timeline of CodeCatalyst.
+          Our
+          event is designed to be a fun and engaging experience, with a mix of coding, learning, and competition. This
+          schedule has been carefully crafted to provide a seamless and enjoyable experience for all participants.“</p>
+
+
+        <div class="phase_wrapper_one">
+          <!-- Flex = 1; For Equal Card Sizes -->
+          <div class="col_lg_6 row" style="flex:1">
+            <div class="phase_card card">
+              <div class="phase">
+                <p class="phase-text gradient">&gt; Round 1 </p>
+                <p class="test">Quiz competition</p>
+              </div>
+              <p class="phase-date">29th March, 2023</p>
+              <p class="phase-para" style="text-align: justify;">     The first round will be a programming quiz consisting of
+                multiple-choice and short answer questions. The quiz will test
+                the participants' knowledge of programming languages,
+                concepts, and theory. The participants with the highest scores
+                will advance the next round. </span>
+              </p>
+            </div>
+          </div>
+
+          <div class="col_lg_6 row" style="flex:1">
+            <div class="phase_card card">
+              <div class="phase">
+                <p class="phase-text gradient">&gt; Round 2 </p>
+                <p class="test">C Coding Cometition</p>
+              </div>
+              <p class="text-center phase-date">29th March, 2023</p>
+              <p class="phase-para" style="text-align: justify;">   The second round will be a coding competition in which
+                participants will be given a question paper consisting of two
+                coding problems. The participants will have a fixed amount of
+                time to complete their solutions. The solutions will be
+                evaluated based on accuracy, efficiency, and readability. The
+                participants who perform the best will be selected for the
+                final round.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="phase_wrapper_one">
+          <div class="col_lg_6 row" style="flex:1">
+            <div class="phase_card card">
+              <div class="phase">
+                <p class="phase-text gradient">&gt; Round 3 </p>
+                <p class="test">Final Round</p>
+              </div>
+              <p class="phase-date">29th March, 2023</p>
+              <p class="phase-para" style="text-align: justify;">    The final round will be an on-spot coding challenge.
+                Participants will be given a randomly assigned programming
+                language and a coding problem. They will have a fixed amount
+                of time to complete their solution. The solutions will be
+                evaluated based on accuracy, efficiency, and hardcore coding.
+                The participants who perform the best will be declared the
+                winners of the Summer Code Challenge.
+              </p>
+            </div>
+          </div>
+
+          <div class="col_lg_6 row" style="flex:1">
+            <div class="phase_card card">
+              <div class="phase">
+                <p class="phase-text gradient">&gt; Round 4 </p>
+                <p class="test"> Results & Optional</p>
+              </div>
+              <p class="text-center phase-date">30th March, 2023</p>
+              <p class="phase-para" style="text-align: justify;">
+             </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Schedule Cards End -->
+
+    <!-- Sponsers Page -->
+
+    <section class="sponsors" id="toSponsors">
+      <div class="container sponsor_page">
+        <h1 class="header gradient2">Sponsors</h1>
+
+        <p class="about-text para" style="text-align:center">"Through Code Catalyst we have collaborated & partnered with the
+          sponsors under various tiers."</p>
+        <div class="sponsor_wrapper">
+
+          <!-- Platinum Sponsors -->
+          <div class="platinum sponsor_cards">
+            <h3 class="header gradient">Platinum Sponsors</h3>
+            <div class="s_images">
+              <a href="https://escai.rf.gd/" target="_blank"><img src="ESC AI.svg"
+                  alt="ESC AI Logo"></a>
+                  <a href="https://gtprojectz.blogspot.com/" target="_blank"><img src="GTproject.svg"
+                    alt="GT Logo"></a>
+             </div>
+          </div>
+          </div>
+
+     
+
+        
+
+          <!-- End of Sponsors  -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="toContact">
+      <h2 class="header gradient2">Get In Touch</h2>
+      <div class="container contact-page row">
+
+        <div class="col-lg-3">
+          <p class="collab">"Make an impact and showcase your brand at Quasar - Hack the Space, contact us for
+            sponsorship
+            opportunities."</p>
+          <a href="mailto:contact.codecatalyst@gmail.com"><button class="register m-auto">Sponsor</button></a>
+        </div>
+        <div class="poc_wrap col-lg-3">
+          <h3 class="">Points of Contact</h3>
+          <div class="poc one">
+            <p><span class="gradient">Abhishek:</span> +91 9370657383</p>
+            <p><span class="gradient">Aman:</span> +91 7875724674</p>
+          </div>
+        </div>
+        <div class="social col-lg-3">
+          <h3 class="mx-3">Follow us on</h3>
+          <div class="social-links">
+            <a class="sc-icon" href="mailto:contact.codecatalyst@gmail.com"><i class="fa-solid fa-envelope gradient"></i></a>
+
+            <a class="sc-icon" href="https://www.instagram.com/code_catalystt/" target="_blank"><i
+                class="fa-brands fa-instagram gradient"></i></a>
+
+            <a class="sc-icon" href="https://github.com/CodeCatalyst-Club" target="_blank"><i
+                class="fa-brands fa-github gradient"></i></a>
 
             
-            <div class="col_lg_6 row" style="flex: 1">
-              <div class="phase_card card">
-                <div class="phase">
-                  <p class="phase-text gradient">&gt; ROUND 2</p>
-                  <p class="test">C Coding Competition</p>
-                </div>
-                <p class="text-center phase-date">29th March 2023</p>
-                <p class="phase-para">
-                  The second round will be a coding competition in which
-                  participants will be given a question paper consisting of two
-                  coding problems. The participants will have a fixed amount of
-                  time to complete their solutions. The solutions will be
-                  evaluated based on accuracy, efficiency, and readability. The
-                  participants who perform the best will be selected for the
-                  final round.
-                </p>
-              </div>
-            </div>
+          
+            
+  
           </div>
-
-          <div class="phase_wrapper_one">
-            <div class="col_lg_6 row" style="flex: 1">
-              <div class="phase_card card">
-                <div class="phase">
-                  <p class="phase-text gradient">&gt; ROUND 3</p>
-                  <p class="test">Final Round</p>
-                </div>
-                <p class="phase-date">29th March, 2023</p>
-                <p class="phase-para" style="text-align: justify">
-                  The final round will be an on-spot coding challenge.
-                  Participants will be given a randomly assigned programming
-                  language and a coding problem. They will have a fixed amount
-                  of time to complete their solution. The solutions will be
-                  evaluated based on accuracy, efficiency, and hardcore coding.
-                  The participants who perform the best will be declared the
-                  winners of the Summer Code Challenge.
-                </p>
-              </div>
-            </div>
-
-            <div class="col_lg_6 row" style="flex: 1">
-              <div class="phase_card card">
-                <div class="phase">
-                  <p class="phase-text gradient">&gt; ROUND 4</p>
-                  <p class="test">Optional</p>
-                </div>
-                <p class="text-center phase-date">29th March, 2023</p>
-                <p class="phase-para" style="text-align: justify">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Nesciunt quos perspiciatis quibusdam eos reprehenderit iure
-                  accusamus excepturi.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--============ price section ================-->
-
-      <div class="wrapper_4">
-        <h1 class="price_title gradient2">What do students get in return</h1>
-        <div class="price_list_section">
-          <ol>
-            <li>Opportunity to showcase their coding skills and creativity</li>
-            <li>
-              Access to resources more than worth Rs. 3,00,000+ (via Github
-              Account)
-            </li>
-            <li>A free membership of Code Catalyst club.</li>
-            <li>Chance to learn from other like-minded individuals</li>
-            <li>Feedback from judges on their projects</li>
-            <li>
-              Valuable experience in the field of coding and software
-              development
-            </li>
-            <li>
-              Networking opportunities with industry professionals and academics
-            </li>
-            <li>
-              Opportunity to build their portfolio and gain recognition for
-              their work.
-            </li>
-          </ol>
         </div>
       </div>
-
-
-      <!--================ adress section ================-->
-    
-
-      <div class="wrapper_5">
-        <div class="quote_section">
-          <i class="fa-solid fa-quote-left"></i>
-          <p>
-            "Join us at the Summer Code Challenge and take the first step
-            towards unleashing your full potential as a skilled and innovative
-            software developer."
-          </p>
-          <i class="fa-sharp fa-solid fa-minus"></i>
-        </div>
-        <div class="adress_section">
-          <p>
-            KARMAVEER BHAURAO PATIL College Bahe Road, Urun Islampur Tal-Walwa,
+      <div class="address container">
+        <a href="https://goo.gl/maps/XMnnFeZjZY5m553g9"
+          target="_blank" class="maps">
+          <h3>Our Address <i class="fa-solid fa-map-location-dot gradient"></i></h3>
+        </a>
+        <p>KARMAVEER BHAURAO PATIL College Bahe Road, Urun Islampur Tal-Walwa,
             Dist-Sangli, Maharashtra, India [ Department of BSC-Information
             Technology ]
-          </p>
-
-          <h3>Event date & Time</h3>
-
-          <p>Event Date : 29 March 2023</p>
-          <p>Event time : 10:00 AM Sharp</p>
-          <a href="https://goo.gl/maps/XMnnFeZjZY5m553g9" class="button-71"
-            >EVENT LOCATION</a
-          >
-        </div>
-      </div>
-    
-    <div class="spon">
-      <h3>sponsored by</h3>
-      <picture>
-        <img onclick="tick_4()" src="ESC AI.svg" alt="spons" class="sponser1" />
-        <img onclick="tick_5()" src="GTproject.svg" alt="" class="sponser2" />
-      </picture>
-    </div>
-  </main>
-    <div class="last">
-      <section class="contact" id="toContact">
-        <h2 class="header gradient2">Get In Touch</h2>
-        <div class="container contact-page row">
-          <div class="col-lg-3">
-            <p class="collab">
-              "Make an impact and showcase your brand at Quasar - Hack the
-              Space, contact us for sponsorship opportunities."
-            </p>
-            <a href="mailto:contact.codecatalyst@gmail.com"
-              ><button class="button-71">Sponsor</button></a
-            >
-          </div>
-          <div class="poc_wrap col-lg-3">
-            <h3 class="">Points of Contact</h3>
-            <div class="poc one">
-              <p><span class="gradient">Abhi :</span> +91 9370657383</p>
-              <p><span class="gradient">Aman:</span> +91 7875724674</p>
-            </div>
-          </div>
-          <div class="social col-lg-3">
-            <h3 class="mx-3">Follow us on</h3>
-            <div class="social-links">
-              <a
-                class="sc-icon"
-                href="mailto:contact.codecatalyst@gmail.com
-              "
-                ><i class="fa-solid fa-envelope gradient"></i
-              ></a>
-
-              <a
-                class="sc-icon"
-                href="https://instagram.com/code_catalystt"
-                target="_blank"
-                ><i class="fa-brands fa-instagram gradient"></i
-              ></a>
-
-              <a
-                class="sc-icon"
-                href="https://github.com/CodeCatalyst-Club"
-                target="_blank"
-                ><i class="fa-brands fa-github gradient"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-
-            </section>
-    </div>
-<hr>
-    <div class="foot">
-      <div class="container footer">
-        <p>
-          Designed & Developed by
-          <a href="#" target="_blank" class="gradient">&copy;Abhishek Pawar</a>
         </p>
-      </div>
-    </div>
-    
 
-  </body>
-<script src="script.js"></script>
+      </div>
+
+     <!-- <div class="csection_wrapper container" style="width:78%">
+        <p class="">No. of Visitors</p>
+        <p class="visitor gradient" id="visits"></p>
+      </div>-->
+
+    </section>
+
+    <footer class="foot">
+      <div class="container footer">
+        <p>Designed & Developed by <a href="#" target="_blank"
+            class="gradient">Abhishek Pawar</a> 
+      </div>
+    </footer>
+  </div>
+
+  <div class="curzr" hidden>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+      <path class="inner"
+        d="M25,30a5.82,5.82,0,0,1-1.09-.17l-.2-.07-7.36-3.48a.72.72,0,0,0-.35-.08.78.78,0,0,0-.33.07L8.24,29.54a.66.66,0,0,1-.2.06,5.17,5.17,0,0,1-1,.15,3.6,3.6,0,0,1-3.29-5L12.68,4.2a3.59,3.59,0,0,1,6.58,0l9,20.74A3.6,3.6,0,0,1,25,30Z"
+        fill="#F2F5F8" />
+      <path class="outer"
+        d="M16,3A2.59,2.59,0,0,1,18.34,4.6l9,20.74A2.59,2.59,0,0,1,25,29a5.42,5.42,0,0,1-.86-.15l-7.37-3.48a1.84,1.84,0,0,0-.77-.17,1.69,1.69,0,0,0-.73.16l-7.4,3.31a5.89,5.89,0,0,1-.79.12,2.59,2.59,0,0,1-2.37-3.62L13.6,4.6A2.58,2.58,0,0,1,16,3m0-2h0A4.58,4.58,0,0,0,11.76,3.8L2.84,24.33A4.58,4.58,0,0,0,7,30.75a6.08,6.08,0,0,0,1.21-.17,1.87,1.87,0,0,0,.4-.13L16,27.18l7.29,3.44a1.64,1.64,0,0,0,.39.14A6.37,6.37,0,0,0,25,31a4.59,4.59,0,0,0,4.21-6.41l-9-20.75A4.62,4.62,0,0,0,16,1Z"
+        fill="#111920" />
+    </svg>
+  </div>
+
+
+
+  <script src="script.js"></script>
+
+
+
+</body>
+
 </html>
