@@ -255,7 +255,7 @@ section#count {
 
 #clock {
     display: flex;
-     justify-content: center;
+    justify-content: center;
     align-items: center;
     font-size: large;
     font-weight: bold;
