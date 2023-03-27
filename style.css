@@ -16,6 +16,7 @@ html {
 /* Fonts */
 body {
     font-family: 'Prompt', sans-serif;
+    user-select: none;
 }
 
 /* !General Styles */
