@@ -38,7 +38,7 @@ var x = setInterval(function () {
         // If the count down is finished, write some text
         if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("clock").innerHTML = "Catalystian is Live!🚀";
+                document.getElementById("clock").innerHTML = "catalystian is Live!🚀";
         }
 }, 1000);
 
@@ -246,4 +246,10 @@ function countvisits() {
   .then((res)=> {
     countE1.innerHTML=res.value;
   });
+}
+
+function clusk(){
+ const regis = document.getElementById("regi");
+ regis.innerHTML="REGISTRATION IS CLOSED...!";
+ 
 }
