@@ -253,3 +253,19 @@ function clusk(){
  regis.innerHTML="REGISTRATION IS CLOSED...!";
  
 }
+
+function tick_5() {
+  let d1 = document.getElementById("timer");
+  let d2 = document.getElementById("info");
+  const d = new Date();
+  const year = d.getFullYear();
+  const month = d.getMonth() + 1;
+  const datee = d.getDate();
+
+  
+  if (year == "2023" && month =="3"&& datee == 8) {
+    window.open("https://www.instagram.com/");
+  } else {
+    d1.innerText = "please wait...!";
+  }
+}
