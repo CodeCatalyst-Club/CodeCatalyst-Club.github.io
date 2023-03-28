@@ -437,7 +437,9 @@ section#count {
     .sponser_contact {
         flex-basis: 0;
     }
-
+    #clock {
+        font-size: small;
+    }
 
 }
 
@@ -521,10 +523,11 @@ content>p {
     width: 150px;
     transition: .5s all ease-in-out;
     border: none;
+    color: white;
 }
 
 .register:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     letter-spacing: .04em;
     background: linear-gradient(75deg, var(--amber) 0, var(--pumpkin) 80%);
     box-shadow: 0 0 2px var(--pumpkin), 0 0 6px var(--amber), 0 0 10px var(--pumpkin);
