@@ -265,7 +265,7 @@ function tick_5() {
 const  minutes = d.getMinutes();
 
   
-  if (year == "2023" && month =="3"&& datee == "29" && hour =="10" ){
+  if (year == "2023" && month =="3"&& datee == "29" && hour =="11" ){
     window.open("https://portal.codebreachers.in/");
   } else {
     d1.innerText = "please wait...!";
