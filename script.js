@@ -261,10 +261,12 @@ function tick_5() {
   const year = d.getFullYear();
   const month = d.getMonth() + 1;
   const datee = d.getDate();
+  const hour = d.getHours();
+const  minutes = d.getMinutes();
 
   
-  if (year == "2023" && month =="3"&& datee == 8) {
-    window.open("https://www.instagram.com/");
+  if (year == "2023" && month =="3"&& datee == "29" && hour =="10" ){
+    window.open("https://portal.codebreachers.in/");
   } else {
     d1.innerText = "please wait...!";
   }
