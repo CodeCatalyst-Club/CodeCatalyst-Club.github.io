@@ -19,6 +19,12 @@ body {
     user-select: none;
 }
 
+.my{
+    background: none;
+    padding: 0.5rem 1rem;
+    background-color: #151313;
+    color: white;
+}
 /* !General Styles */
 
 /* Quasar Gradient */
@@ -73,6 +79,10 @@ header {
     position:fixed;
     width:100%;
     z-index:500;
+
+
+
+
 }
 
 
@@ -447,7 +457,7 @@ section#count {
 
 /* Clock CSS End */
 
-/* 2. About Quasar Styles */
+/* 2. About  Styles */
 .about {
     background-color: var(--about-color);
     padding: 1.5rem 0;
@@ -457,6 +467,7 @@ section#count {
 .header {
     text-align: center;
     font-weight: 700;
+    
 }
 
 .about-text {
@@ -513,12 +524,13 @@ content>p {
 
 .reg-para {
     margin: auto 0;
-}
+}z
 
 .register {
     background: linear-gradient(75deg, var(--amber) 0, var(--pumpkin) 80%);
     ;
-    padding: 0.5em 1em;
+    padding: 0.5rem 1rem;
+    background-color: #ff8585;
     text-decoration: none;
     width: 150px;
     transition: .5s all ease-in-out;
