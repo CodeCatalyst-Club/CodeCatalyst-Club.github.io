@@ -421,9 +421,7 @@ section#count {
         width: 20px;
         height: 20px;
     }
-    .win1 , .win2 , .win3{
-        width: 100px;
-    }
+
     @keyframes circle {
         0% {
             transform: rotate(0deg) translate(-100px) rotate(0deg);
@@ -720,8 +718,11 @@ h3 {
 .phase-para:hover{
     opacity: 1;
 }
-.win1,.win2,.win3{
+.win1,.win2{
     width: 200px;
+}
+.win3{
+    width: 150px;
 }
 /* Schedule Card End */
 
@@ -789,7 +790,14 @@ h3 {
     text-align: justify;
 
 }
+.text{
+    padding: 2rem 0;
 
+
+
+    text-align: center;
+
+}
 .sc-icon {
     font-size: 2rem;
     padding: 0 1rem;
@@ -886,7 +894,7 @@ footer {
     justify-content: center;
     align-items: center;
     letter-spacing: 2px;
-    left: 100px;
+    left: 150px;
 }
 
 .timeline ul li div div {
@@ -949,18 +957,24 @@ footer {
     .timeline ul li div {
         padding: 0;
         width:250px;
+ 
     }
-    time{
-        font-size: 14px;
+    .timeline ul li div time{
+        font-size: 17px;
         position: absolute;
+        left: 100px;
+    ;
         padding: 0.3em;
         background-color
         : #4585c2;
     }
     .text{
-        font-size: 20px;
+        padding-top: 2rem;
+
+ 
+    
         text-align: center;
-        margin-left: 2rem;
+    
     }
     .timeline ul li:nth-of-type(even)>div {
         left: 45px;
@@ -968,6 +982,9 @@ footer {
     #hero-image {
         width: 100%;
         height: 10rem;
+    }
+    .win1 , .win2 , .win3{
+        width: 100px;
     }
 }
 
