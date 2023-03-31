@@ -718,7 +718,9 @@ h3 {
 .phase-para:hover{
     opacity: 1;
 }
-
+.win1,.win2,.win3{
+    width: 200px;
+}
 /* Schedule Card End */
 
 /* Sponsers Section */
@@ -955,6 +957,8 @@ footer {
     }
     .text{
         font-size: 20px;
+        text-align: center;
+        margin-left: 2rem;
     }
     .timeline ul li:nth-of-type(even)>div {
         left: 45px;
