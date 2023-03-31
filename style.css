@@ -421,7 +421,9 @@ section#count {
         width: 20px;
         height: 20px;
     }
-
+    .win1 , .win2 , .win3{
+        width: 100px;
+    }
     @keyframes circle {
         0% {
             transform: rotate(0deg) translate(-100px) rotate(0deg);
